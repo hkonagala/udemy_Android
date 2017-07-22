@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.harikakonagala.hikerswatch.MainActivity">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/background_image"
+        android:src="@drawable/bgm"
+        android:scaleType="centerCrop"/>
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Hiker's Watch"
+        android:textColor="@android:color/background_dark"
+        android:textSize="35sp"
+        android:padding="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tv_lat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:textColor="@android:color/background_light"
+        android:layout_below="@+id/tv_title"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/tv_lon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_lat"
+        android:layout_alignStart="@+id/tv_lat"
+        android:layout_below="@+id/tv_lat"
+        android:layout_marginTop="37dp"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:textColor="@android:color/background_light"/>
+
+    <TextView
+        android:id="@+id/tv_acc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_lon"
+        android:layout_alignStart="@+id/tv_lon"
+        android:layout_below="@+id/tv_lon"
+        android:layout_marginTop="42dp"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:textColor="@android:color/background_light"/>
+
+    <TextView
+        android:id="@+id/tv_alt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_acc"
+        android:layout_alignStart="@+id/tv_acc"
+        android:layout_below="@+id/tv_acc"
+        android:layout_marginTop="38dp"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:textColor="@android:color/background_light"/>
+
+    <TextView
+        android:id="@+id/tv_addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_alt"
+        android:layout_alignStart="@+id/tv_alt"
+        android:layout_below="@+id/tv_alt"
+        android:layout_marginTop="36dp"
+        android:textSize="15sp"
+        android:padding="5dp"
+        android:textColor="@android:color/background_light"/>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/fab"
+        android:src="@drawable/ic_arrow_forward_black_36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/tv_title"
+        android:layout_toEndOf="@+id/tv_title"
+        android:layout_marginBottom="15dp" />
+
+</RelativeLayout>
