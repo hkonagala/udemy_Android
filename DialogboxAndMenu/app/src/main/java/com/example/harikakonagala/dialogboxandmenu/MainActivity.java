@@ -115,6 +115,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.spanish:
                 setLanguage("spanish");
                 return true;
+            case R.id.web:
+                Intent i = new Intent(MainActivity.this, WebActivity.class);
+                startActivity(i);
             default:
                 return false;
         }

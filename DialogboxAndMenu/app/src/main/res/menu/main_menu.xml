@@ -11,4 +11,8 @@
         android:id="@+id/english"></item>
     <item android:title="spanish"
         android:id="@+id/spanish"></item>
+
+    <item
+        android:title="webview"
+        android:id="@+id/web"></item>
 </menu>

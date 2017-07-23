@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.harikakonagala.dialogboxandmenu">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -16,20 +18,23 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".NewActivity"
-            android:parentActivityName=".MainActivity"
-            android:label="Notes">
-        <meta-data
-            android:name="android.support.PARENT_ACTIVITY"
-            android:value=".MainActivity" />
+        <activity
+            android:name=".NewActivity"
+            android:label="Notes"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
         </activity>
-        <activity android:name=".NotesActivity"
-            android:parentActivityName=".NewActivity"
-            android:label="Notes">
+        <activity
+            android:name=".NotesActivity"
+            android:label="Notes"
+            android:parentActivityName=".NewActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".NewActivity" />
         </activity>
+        <activity android:name=".WebActivity"></activity>
     </application>
 
 </manifest>

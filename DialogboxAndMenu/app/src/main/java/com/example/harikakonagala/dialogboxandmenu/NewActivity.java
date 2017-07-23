@@ -51,6 +51,7 @@ public class NewActivity extends AppCompatActivity {
             }
         });
 
+        //delete note
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(AdapterView<?> parent, View view, final int position, long id) {
